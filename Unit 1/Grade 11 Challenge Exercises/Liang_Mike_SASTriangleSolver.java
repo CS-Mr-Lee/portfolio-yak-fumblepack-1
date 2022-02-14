@@ -208,7 +208,7 @@ public class Liang_Mike_SASTriangleSolver {
   /**
    * This method returns the degree value of a radian
    * 
-   * @param rad a radian value
+   * @param rad - a radian value
    * @return a degree value of the radian value
    */
   private static double radianToDegree(double rad) {
