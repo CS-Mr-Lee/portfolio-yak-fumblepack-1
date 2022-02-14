@@ -43,6 +43,7 @@ public class Liang_Mike_FoolProof {
 
       numerator = numerator.stripLeading();
 
+      // Break out of the loop if the numerator's first char starts with a "q" or "Q"
       if (String.valueOf(numerator
           .charAt(0))
           .equalsIgnoreCase("q")) {
