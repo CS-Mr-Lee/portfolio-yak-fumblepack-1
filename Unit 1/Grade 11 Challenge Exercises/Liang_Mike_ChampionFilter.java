@@ -16,14 +16,8 @@
  * the lowest armor. Then, we write it to the file using buffered writer.
  */
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
+import java.io.*;
+import java.util.*;
 
 public class Liang_Mike_ChampionFilter {
 

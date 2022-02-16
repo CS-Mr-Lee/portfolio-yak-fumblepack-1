@@ -41,7 +41,11 @@ public class Liang_Mike_FoolProof {
       System.out.print("Enter the numerator: ");
       numerator = sc.nextLine();
 
-      if (String.valueOf(numerator.charAt(0)).equalsIgnoreCase("q")) {
+      numerator = numerator.stripLeading();
+
+      if (String.valueOf(numerator
+          .charAt(0))
+          .equalsIgnoreCase("q")) {
         break;
       }
       if (numerator.matches("[0-9]+")) { // Make sure that the input is only numbers
@@ -49,6 +53,8 @@ public class Liang_Mike_FoolProof {
         // Prompt for divisor
         System.out.print("Enter the divisor: ");
         divisor = sc.nextLine();
+
+        divisor = divisor.stripLeading();
 
         if (divisor.matches("[0-9]+")) { // Make sure that the input is only numbers
 
@@ -82,7 +88,11 @@ public class Liang_Mike_FoolProof {
         System.out.println("\n");
       }
 
-    } while (!(String.valueOf(numerator.charAt(0)).equalsIgnoreCase("q"))); // Condition for breaking out of the loop
+    } while (!(String.valueOf(numerator
+        .stripLeading()
+        .charAt(0))
+        .equalsIgnoreCase("q"))); // Condition for breaking out
+                                  // of the loop
 
   }
 
