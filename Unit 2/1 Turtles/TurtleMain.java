@@ -68,11 +68,16 @@
 
 public class TurtleMain {
   public static void main(String[] a) {
+
+    // Create a new instance of Turtle called bob
     Turtle bob = new Turtle();
+
+    // Set bob's attributes
     bob.penColor("black");
     bob.width(10);
     bob.speed(1);
 
+    // Constants
     final int WALL_LENGTH = 250;
     final int WALL_BASE_LENGTH = 300;
     final int WALL_TO_DOOR = 170;
@@ -87,6 +92,7 @@ public class TurtleMain {
     final int CHIMNEY_HEIGHT = 100;
     final int CHIMNEY_WIDTH = 60;
 
+    // Draw the walls
     bob.forward(WALL_BASE_LENGTH);
     bob.left(90);
     bob.forward(WALL_LENGTH);
