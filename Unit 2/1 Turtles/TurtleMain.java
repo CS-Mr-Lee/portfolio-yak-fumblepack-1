@@ -32,12 +32,12 @@
  * What are the instructions to:
  * - move forward
  * 
- * forward()
+ * forward(double distance)
  * 
  * - turn right/left
  * 
- * left()
- * right()
+ * left(double angle)
+ * right(double angle)
  * 
  * - place a dot
  * 
@@ -50,11 +50,11 @@
  * 
  * - change the colour of the turtle
  * 
- * fillColor()
+ * fillColor(Color fillColor)
  * 
  * - change the colour of the turtle's pen
  * 
- * penColor()
+ * penColor(Color penColor)
  * 
  * - lift the pen off the canvas
  * 
