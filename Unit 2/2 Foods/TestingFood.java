@@ -31,8 +31,7 @@ public class TestingFood {
 
     /*
      * Answer:
-     * No I cannot print it yet since the method to print it directly does not exist
-     * within that class
+     * Yes I can print it out since the method to retrieve the variable exists
      */
 
     // Can you print it with the attribute?
