@@ -11,58 +11,58 @@
  * 
  * - the position of the turtle
  * 
- * this.__location
+ * __location
  * 
  * - the direction of the turtle
  * 
- * this.__direction
+ * __direction
  * 
  * - the colour of the pen
  * 
- * this.__penColor
+ * __penColor
  * 
  * - if you can see it or not
  * 
- * this.__isVisible
+ * __isVisible
  * 
  * - it the pen is down or not
  * 
- * this._isPenDown
+ * _isPenDown
  * 
  * What are the instructions to:
  * - move forward
  * 
- * this.forward()
+ * forward()
  * 
  * - turn right/left
  * 
- * this.left()
- * this.right()
+ * left()
+ * right()
  * 
  * - place a dot
  * 
- * this.dot()
+ * dot()
  * 
  * - place a stamp of the turtle
  * 
- * this.stamp()
+ * stamp()
  * 
  * 
  * - change the colour of the turtle
  * 
- * this.fillColor()
+ * fillColor()
  * 
  * - change the colour of the turtle's pen
  * 
- * this.penColor()
+ * penColor()
  * 
  * - lift the pen off the canvas
  * 
- * this.up()
+ * up()
  * 
  * - put the pen onto the canvas
  * 
- * this.down()
+ * down()
  * 
  */
 
