@@ -4,7 +4,7 @@
  * Description:
  * This vegetable class defines the attributes of a vegetable: name,
  * calories, weight and some actions that simulates the caloric consumption of a
- * particular vegatable.
+ * particular vegetable.
  */
 public class Vegetable {
 
@@ -18,7 +18,10 @@ public class Vegetable {
   /** weight of the vegetable */
   double weight;
 
-  public Vegetable() { // Empty constructor provides a default object
+  /**
+   * Empty constructor provides a default Vegetable
+   */
+  public Vegetable() {
     this.name = "";
     this.weight = -1;
     this.calories = -1;
@@ -43,22 +46,25 @@ public class Vegetable {
    */
 
   /**
+   * Gets the name of the vegetable
    * 
-   * @return
+   * @return the name of the vegetable
    */
   public String getName() {
     return this.name;
   }
 
   /**
+   * Gets the calories of the vegetable
    * 
-   * @return
+   * @return the calories of the vegetable
    */
   public int getCalories() {
     return this.calories;
   }
 
   /**
+   * Gets the weight of the vegetable in grams
    * 
    * @return
    */
@@ -71,9 +77,9 @@ public class Vegetable {
    */
 
   /**
+   * Changes the weight with the new one supplied through the parameters
    * 
-   * @param weight
-   * @return
+   * @param weight -> the weight to be set
    */
   public void setWeight(double weight) {
     this.weight = weight;
@@ -84,9 +90,13 @@ public class Vegetable {
    */
 
   /**
+   * Try to calculate the caloric amount eaten using weight to be eaten of the
+   * Vegetable as a percentage multipled by total calories the Vegetable has. If
+   * the weight that is to be eaten exceeds the weight of the Vegetable, then
+   * return the WEIGHT_FLAG.
    * 
-   * @param weight
-   * @return
+   * @param weight -> the weight to be eaten
+   * @return amountEat -> the caloric amount that was consumed
    */
   public int eaten(double weight) {
 
@@ -94,6 +104,9 @@ public class Vegetable {
 
     if (weight > this.weight) {
       return WEIGHT_FLAG;
+    } else {
+      this.setWeight(this.getWeight() - weight); // The weight to be eaten must be removed from the weight of the
+                                                 // Vegetable so the Vegetable is 'eaten'
     }
 
     double percentWeightRemoved = weight / 100;
@@ -105,7 +118,11 @@ public class Vegetable {
   }
 
   /**
+   * Overrides the default string builder metod and returns a stirng with all the
+   * important info of the Vegetable
    * 
+   * @return builder -> a string containing all the important info of the
+   *         Vegetable
    */
   @Override
   public String toString() {
