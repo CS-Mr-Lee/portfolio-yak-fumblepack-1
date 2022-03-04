@@ -1,7 +1,10 @@
 /**
  * Name: Mike Liang
- * Date:
+ * Date: Feb 23 2022
  * Description:
+ * In this exercise we learned how to create helper methods in a class that
+ * could be used without creating a separate instance of the class. These
+ * methods contain the keyword public and static.
  */
 
 public class Fraction {
@@ -127,6 +130,8 @@ public class Fraction {
     int denominator = f1.getDenominator() * f2.getDenominator();
 
     Fraction newFraction = new Fraction(numerator, denominator);
+
+    newFraction.simplify();
 
     return newFraction;
   }
