@@ -158,7 +158,7 @@ public class Meat extends Food {
    */
   @Override
   public String toString() {
-    return super.toString() + "\nAnimal: " + this.animal + "\nOrgan: " + this.organ + "\nRaw? " + this.raw;
+    return super.toString() + "\nAnimal: " + this.animal + "\nOrgan: " + this.organ + "\nRaw? " + this.isRaw;
   }
 
 }
