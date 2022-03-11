@@ -3,7 +3,8 @@
  * Date: March 7 2022
  * Description:
  * A plane class that inherits the properties of the Vehicle class. The plane
- * class has one attribute specific to itself.
+ * class has one attribute specific to itself. It has it's own addPassenger()
+ * method that is overriden to make it conform to the actions of a plane.
  * 
  * @see Vehicle
  */
@@ -13,7 +14,10 @@ public class Plane extends Vehicle {
   private double altitude;
 
   /*
-   * Constructor
+   * Default constructor provides a parameter for initialization of a default
+   * Plane object that inherits the superclass Vehicle
+   * 
+   * @param colour -> the colour of the plane
    */
   public Plane(String colour) {
     super(colour);
@@ -21,9 +25,11 @@ public class Plane extends Vehicle {
   }
 
   /**
+   * Filled constructor initializes the plane object with all the attributes of a
+   * Plane
    * 
-   * @param colour        ->
-   * @param numPassengers ->
+   * @param colour        -> colour of the plane
+   * @param numPassengers -> number of passengers the plane can carry
    */
   public Plane(String colour, int numPassengers) {
     super(colour, numPassengers);
@@ -33,16 +39,18 @@ public class Plane extends Vehicle {
   /* Accessors and Mutators */
 
   /**
+   * Gets the altitude
    * 
-   * @return
+   * @return the altitude
    */
   public double getAltitude() {
     return this.altitude;
   }
 
   /**
+   * Sets a new altitude
    * 
-   * @param newAltitude ->
+   * @param newAltitude -> the new altitude to be set
    */
   public void setAltitude(double newAltitude) {
     this.altitude = newAltitude;
@@ -67,14 +75,14 @@ public class Plane extends Vehicle {
   }
 
   /**
-   * 
+   * Prints out a message saying the plane engine roars
    */
   public void roar() {
     System.out.println("The plane engine roars!");
   }
 
   /**
-   * 
+   * Overrides the default string method and provides all the info of Plane
    */
   @Override
   public String toString() {

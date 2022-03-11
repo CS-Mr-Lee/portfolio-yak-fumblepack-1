@@ -38,8 +38,8 @@ public class Vehicle {
    * Filled constructor initializes a vehicle with a color and the amount of
    * passengers it can carry
    * 
-   * @param colour        ->
-   * @param numPassengers ->
+   * @param colour        -> color of the vehicle
+   * @param numPassengers -> amount of passengers the vehicle can hold
    */
   public Vehicle(String colour, int numPassengers) {
     this.colour = colour;
@@ -51,6 +51,7 @@ public class Vehicle {
   /* Accessors and Mutators */
 
   /**
+   * Gets the color
    * 
    * @return the value of the color attribute
    */
@@ -59,6 +60,8 @@ public class Vehicle {
   }
 
   /**
+   * Gets the amount of passengers
+   * 
    * @return the value of the numPassengers attribute
    */
   public int getNumPassengers() {
@@ -66,6 +69,7 @@ public class Vehicle {
   }
 
   /**
+   * Gets the speed
    * 
    * @return the value of the speed attribute
    */
@@ -74,6 +78,7 @@ public class Vehicle {
   }
 
   /**
+   * Gets the direction
    * 
    * @return the value of the direction attribute
    */
@@ -82,6 +87,7 @@ public class Vehicle {
   }
 
   /**
+   * Sets the new speed
    * 
    * @param newSpeed -> new speed to be set
    */
@@ -90,6 +96,7 @@ public class Vehicle {
   }
 
   /**
+   * Sets the new direction
    * 
    * @param newDirection -> new direction to be set
    */
@@ -102,6 +109,7 @@ public class Vehicle {
    */
 
   /**
+   * Sets the new amount of passengers
    * 
    * @param newNum -> new amount of passengers to be set
    */
@@ -112,6 +120,8 @@ public class Vehicle {
   /* Other methods */
 
   /**
+   * Accelerate the car by setting the speed using parameters of acceleration and
+   * time passed into the method
    * 
    * @param accel -> acceleration
    * @param time  -> time
@@ -143,7 +153,8 @@ public class Vehicle {
   }
 
   /**
-   * Overrides the default string method
+   * Overrides the default string method to provide all the info of the Vehicle
+   * class
    */
   @Override
   public String toString() {

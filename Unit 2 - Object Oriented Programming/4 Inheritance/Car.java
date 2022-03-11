@@ -15,7 +15,7 @@ public class Car extends Vehicle {
    * Default constructor provides a parameter for initialization of a default Car
    * object that inherits the superclass Vehicle
    * 
-   * @param colour ->
+   * @param colour -> the colour of the car
    */
   public Car(String colour) {
     super(colour);
